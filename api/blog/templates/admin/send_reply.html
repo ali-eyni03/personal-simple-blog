@@ -1,0 +1,39 @@
+{# templates/admin/send_reply.html #}
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block content %}
+<div id="content-main">
+    <h1>{{ title }}</h1>
+    
+    <div class="module">
+        <h2>اطلاعات پیام اصلی</h2>
+        <div style="padding: 10px;">
+            <p><strong>نام:</strong> {{ contact.name }}</p>
+            <p><strong>ایمیل:</strong> {{ contact.email }}</p>
+            <p><strong>تاریخ ارسال:</strong> {{ contact.created_at }}</p>
+            <p><strong>پیام:</strong></p>
+            <div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px;">
+                {{ contact.message|linebreaks }}
+            </div>
+        </div>
+    </div>
+    
+    <div class="module">
+        <h2>ارسال پاسخ</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div style="padding: 10px;">
+                <div style="margin-bottom: 10px;">
+                    <label for="reply_message">متن پاسخ:</label>
+                    <textarea name="reply_message" id="reply_message" cols="80" rows="10" style="width: 100%;"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="ارسال پاسخ" class="default" />
+                    <a href="{% url 'admin:your_app_name_contactmessage_changelist' %}" class="button" style="margin-right: 10px;">انصراف</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,238 @@
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #f8efea;
+    height: 7rem;
+    margin-bottom: auto;
+  }
+  .header-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto;
+    width: 70%;
+  }
+  .header-search > svg{
+    width: 1.5rem;
+  }
+  .navbar-logo{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+  }
+  .navbar-logo >p{
+    font-size: 2rem;
+  }
+  .header-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .header-links > a{
+    text-decoration: none;
+    font-size: 1.3rem;
+  
+  }
+  footer{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: black;
+  }
+  .footer-text{
+    color: white;
+    font-size: .9rem;
+  color: rgb(149, 149, 149);}
+  
+  body {
+    font: 1.2em sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .cards {
+    width: 65%;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 5px;
+  }
+  
+  .card {
+    padding: .5rem;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+  
+  .card h2 {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  .card .content {
+    padding: 0.5rem;
+  }
+  
+  .card footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+  }
+  .post__date{
+    width: 64px;
+      border: 2px solid #eee;
+      background-color: #fff;
+      padding: 12px 5px;
+      text-align: center;
+      z-index: 9;
+      position: absolute;
+      margin-top: -3%;
+      display: flex;
+      flex-direction: column;
+  
+  }
+  .post__date > .day{
+    font-size: 1.5rem;
+    line-height: 1em;
+    font-weight: bolder;
+    margin-bottom: 7px;
+    font-family: "Noto Naskh Arabic";
+    color: #4d4d4d;
+  }
+  .post__date > .month{
+    font-size: .8rem;
+    line-height: 1em;
+  font-family: "Noto Naskh Arabic";
+  color: #606060;
+  
+  }
+  .post__category{
+    color: #ce8460;
+    font-weight: lighter;
+    font-family: "Noto Naskh Arabic";
+    margin: 2rem 0 .5rem 0;
+    font-size: 1rem;
+  }
+  .post__title{
+    font-weight: bolder;
+    margin-bottom: .8rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .post__title:hover{
+    color: #ce8460;
+  }
+  .post__desc{
+    font-size: .9rem;
+    font-weight: lighter;
+    line-height: 1.5rem;
+  }
+  .social__links{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+  height: 2rem;
+  margin-top: 8rem;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+  }
+  .social .icon >svg{
+    width: 1rem;
+    fill: rgb(86, 86, 86);
+  }
+  .social .text{
+    font-size: 1rem;
+    color: white;
+  }
+  .social:hover .text{
+      color: #ce8460
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-inline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    list-style-type: none;
+    flex-direction: row-reverse;
+  }
+  .list-inline-item{
+    margin: 8rem 0 8rem 0;
+  }
+  .list-inline-item a{
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;;
+  }
+  .list-inline-item .active{
+      background-color: #ce8460;
+      color: white;
+  }
+  
+  
+  .container-post {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside {
+    width: 30%;
+    border: 1px solid #e0e0e0;
+    margin: 2rem 0;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .container-post, 
+    aside {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  }
+  .follow-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }

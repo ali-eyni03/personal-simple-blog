@@ -1,0 +1,60 @@
+
+# === Logs ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+
+# === Python / Django ===
+env/
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.pot
+*.log
+local_settings.py
+
+# Ignore Django static and media folders (collected/generated)
+static/
+staticfiles/
+static_root/
+media/
+media_root/
+
+# Migrations (optional to ignore)
+**/migrations/
+!**/migrations/__init__.py
+
+# === React / Node.js ===
+node_modules/
+build/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# === System / Editor Files ===
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# VSCode / PyCharm
+.vscode/
+!.vscode/extensions.json
+.idea/
