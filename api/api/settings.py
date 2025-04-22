@@ -237,8 +237,8 @@ CKEDITOR_5_CONFIGS = {
 CKEDITOR_5_FILE_UPLOAD_PERMISSION = "staff" 
 
 EMAIL_HOST = 'smtp.gmail.com' 
-EMAIL_HOST_USER = 'ali.techlover2003@gmail.com' 
-EMAIL_HOST_PASSWORD = 'qbowggiresllslii'  
+EMAIL_HOST_USER = 'yourgmail@gmail.com' 
+EMAIL_HOST_PASSWORD = 'PASSKEY'  
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
