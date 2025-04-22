@@ -57,7 +57,7 @@ python manage.py runserver
 
 
 
-1. نصب وابستگی‌ها:
+1. نصب Dependency ها:
 
 ```bash
 npm install
@@ -70,8 +70,6 @@ npm run dev
 ```
 
 > آدرس پیش‌فرض: http://localhost:5173/
-
----
 
 ---
 
