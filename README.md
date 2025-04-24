@@ -30,10 +30,12 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-4. انجام مایگریشن‌ها:
+4. ایجاد پوشه استاتیک و انجام مایگریشن‌ها برای اپ ها:
 
 ```bash
-python manage.py makemigrations
+mkdir static
+python manage.py makemigrations blog
+python manage.py makemigrations about
 python manage.py migrate
 ```
 
