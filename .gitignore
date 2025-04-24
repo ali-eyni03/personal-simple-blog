@@ -13,18 +13,11 @@ env/
 venv/
 __pycache__/
 *.py[cod]
-*.sqlite3
-db.sqlite3
 *.pot
 *.log
 local_settings.py
 
-# Ignore Django static and media folders (collected/generated)
-static/
-staticfiles/
-static_root/
-media/
-media_root/
+
 
 # Migrations (optional to ignore)
 **/migrations/
